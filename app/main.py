@@ -42,7 +42,10 @@ async def main() -> None:
         ),
         service.run_program(
             [
-                Message(speaker_id, MessageType.PLAY_SONG, "Rick Astley - Never Gonna Give You Up")
+                Message(
+                    speaker_id, MessageType.PLAY_SONG,
+                    "Rick Astley - Never Gonna Give You Up"
+                )
             ]
         ),
         run_parallel(
